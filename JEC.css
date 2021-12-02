@@ -114,12 +114,13 @@ a{
 	float: left;
 	right: 25vw;
 	padding-top: 20px;
+	padding-right: 40px;
 }
 #container2p{
 	position: absolute;
 	float: left;
 	left: 55vw;
-	padding-left: -20vw;
+	padding-right: 40px;
 	padding-top: 100px;
 	line-height: 3em;
 }
@@ -127,6 +128,7 @@ a{
 	position: absolute;
 	float: left;
 	right: 20vw;
+	padding-right: 40px;
 
 }
 #electionbtn{
