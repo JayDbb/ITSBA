@@ -118,11 +118,12 @@ a{
 }
 #container2p{
 	position: absolute;
-	float: left;
-	left: 55vw;
-	padding-right: 40px;
-	padding-top: 100px;
-	line-height: 3em;
+    float: left;
+    left: 55vw;
+    padding-right: 100px;
+    padding-top: 100px;
+    line-height: 3em;
+    margin-left: -15px;
 }
 #electionbtnattr{
 	position: absolute;
