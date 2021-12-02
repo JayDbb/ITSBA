@@ -58,13 +58,22 @@ a{
 	padding-top: 10px;
 	color:  rgb(0, 114, 9);
 }
+#dem:hover{
+	color: #fff;
+}
+#val:hover{
+	color: #fff;
+}
+#leg:hover{
+	color: #fff;
+}
 #copy{
 	color: #000;
 	position: absolute;
 	float: left;
-	left:70px;
+	left:65px;
 	white-space: nowrap;
-	bottom: -1500px;
+	bottom: -250vh;
 }
 ::-webkit-scrollbar{
 	width: 0px;
