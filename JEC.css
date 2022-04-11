@@ -202,6 +202,19 @@ a{
 	border: 2px solid rgb(248, 236, 66) ;
 	cursor: pointer;
 }
+#container-per{
+	display: flex;
+	width: 100vw;
+	height: 100vh;
+}
+.vales-per{
+	position: relative;
+	font-size: 1vw;
+	color: #000000;
+	text-align: center;
+	transition: font-size 1s;
+	z-index: 2;
+}
 .values{
 	position: relative;
 	font-size: 4vw;
@@ -317,18 +330,18 @@ white-space: nowrap;
 }
 #cornwall{
 	text-align: center;
-	font-size: 30px;
+	font-size: 20px;
 }
 
 #surrey{
 	padding-left: 20vw;
 	text-align: center;
-	font-size: 30px;
+	font-size: 20px;
 }
 #middlesex{
 	padding-left: 20vw;
 	text-align: center;
-	font-size: 30px;
+	font-size: 20px;
 }
 /* animation box */
 .animation-area {
