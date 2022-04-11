@@ -5,17 +5,35 @@ var speedmid = 1;
 var speedsur = 1;
 var speedcor = 1;
 var a =0;
-var r =0
+var r =0;
+var backtop = document.getElementById("backtotop");
+
 const observervalues = new IntersectionObserver(enteries =>{
     
     enteries.forEach(entry => {
         if (entry.isIntersecting && a ==0) {
           count();
+
           a= 1;
         }
       });
-})
+    
+});
 
+const observebacktop = new IntersectionObserver(enteries =>{
+    enteries.forEach(entry => {
+        if (entry.isIntersecting){
+            backtop.style.visibility = "hidden";
+            console.log("caught")
+        } else{
+            backtop.style.visibility = "visible";
+            console.log("catch")
+        };
+   
+
+    })
+})
+observebacktop.observe(document.getElementById("logo"));
 const observersect3 = new IntersectionObserver(enteries=>{
     enteries.forEach(entry => {
         if (entry.isIntersecting && r ==0) {
@@ -29,6 +47,7 @@ observervalues.observe(document.querySelector(".values"))
 observersect3.observe(document.querySelector(".sect3"))
 
 function count(){
+
     var interval = setInterval(function(){
     cornwall += 12;
     document.getElementById('corn').innerHTML = cornwall.toLocaleString() ;
@@ -66,9 +85,6 @@ function sect3(){
     var e =0;
     $(window).scroll(function() {
     var oTop = $(window).scrollTop() - $('#container-2').offset().top;
-    console.log($('#container-2').offset().top, "offset");
-    console.log(window.innerHeight,"innerheight");
-    console.log($(window).scrollTop(),"scrolltop")
     if (e == 0 && window.innerHeight >= oTop) {
         document.getElementById("container2h2").style.animation= "electiontext 2s";
         document.getElementById('container2p').style.animation="electiontext 2s";
